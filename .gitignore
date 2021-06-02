@@ -3,6 +3,7 @@
 /node_modules
 
 # Logs
+nohup.out
 logs
 *.log
 npm-debug.log*
