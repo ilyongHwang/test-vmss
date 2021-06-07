@@ -8,7 +8,7 @@ trigger:
 
 pool:
   # vmImage: ubuntu-latest
-  name: "Test Agent Pool"
+  name: "Test VMSS Agent Pool"
 
 steps:
   - script: |
@@ -23,7 +23,5 @@ steps:
       TargetFolder: "$(Build.ArtifactStagingDirectory)"
 
   - task: PublishBuildArtifacts@1
-    displayName: "PublishBuildArtifacts"
     inputs:
-      PathtoPublish: $(Build.ArtifactStagingDirectory) # dist or build
-      artifactName: "drop"
+      PathtoPublish: "$(Build.ArtifactStagingDirectory)" # dist or build
