@@ -8,7 +8,7 @@ trigger:
 
 pool:
   # vmImage: ubuntu-latest
-  name: "Test Agent Pool"
+  name: "Test VMSS Agent Pool"
 
 steps:
   - script: |
